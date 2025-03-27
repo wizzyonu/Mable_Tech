@@ -1,0 +1,337 @@
+MICHAEL@DESKTOP-J1J4JC5 MINGW64 ~/Desktop/Mable_Tech portfoliio
+$ cd css
+
+MICHAEL@DESKTOP-J1J4JC5 MINGW64 ~/Desktop/Mable_Tech portfoliio/css (main)
+$ git status
+On branch main
+Your branch is ahead of 'origin/main' by 2 commits.
+  (use "git push" to publish your local commits)
+
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+        modified:   README.md
+
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+        modified:   README.md
+
+
+MICHAEL@DESKTOP-J1J4JC5 MINGW64 ~/Desktop/Mable_Tech portfoliio/css (main)
+$ git commit -A -m "add it"
+error: unknown switch `A'
+usage: git commit [-a | --interactive | --patch] [-s] [-v] [-u<mode>] [--amend]
+                  [--dry-run] [(-c | -C | --squash) <commit> | --fixup [(amend|reword):]<commit>]
+                  [-F <file> | -m <msg>] [--reset-author] [--allow-empty]
+                  [--allow-empty-message] [--no-verify] [-e] [--author=<author>]
+                  [--date=<date>] [--cleanup=<mode>] [--[no-]status]
+                  [-i | -o] [--pathspec-from-file=<file> [--pathspec-file-nul]]
+                  [(--trailer <token>[(=|:)<value>])...] [-S[<keyid>]]
+                  [--] [<pathspec>...]
+
+    -q, --[no-]quiet      suppress summary after successful commit
+    -v, --[no-]verbose    show diff in commit message template
+
+Commit message options
+    -F, --[no-]file <file>
+                          read message from file
+    --[no-]author <author>
+                          override author for commit
+    --[no-]date <date>    override date for commit
+    -m, --[no-]message <message>
+                          commit message
+    -c, --[no-]reedit-message <commit>
+                          reuse and edit message from specified commit
+    -C, --[no-]reuse-message <commit>
+                          reuse message from specified commit
+    --[no-]fixup [(amend|reword):]commit
+                          use autosquash formatted message to fixup or amend/reword specified commit
+    --[no-]squash <commit>
+                          use autosquash formatted message to squash specified commit
+    --[no-]reset-author   the commit is authored by me now (used with -C/-c/--amend)
+    --trailer <trailer>   add custom trailer(s)
+    -s, --[no-]signoff    add a Signed-off-by trailer
+    -t, --[no-]template <file>
+                          use specified template file
+    -e, --[no-]edit       force edit of commit
+    --[no-]cleanup <mode> how to strip spaces and #comments from message
+    --[no-]status         include status in commit message template
+    -S, --[no-]gpg-sign[=<key-id>]
+                          GPG sign commit
+
+Commit contents options
+    -a, --[no-]all        commit all changed files
+    -i, --[no-]include    add specified files to index for commit
+    --[no-]interactive    interactively add files
+    -p, --[no-]patch      interactively add changes
+    -o, --[no-]only       commit only specified files
+    -n, --no-verify       bypass pre-commit and commit-msg hooks
+    --verify              opposite of --no-verify
+    --[no-]dry-run        show what would be committed
+    --[no-]short          show status concisely
+    --[no-]branch         show branch information
+    --[no-]ahead-behind   compute full ahead/behind values
+    --[no-]porcelain      machine-readable output
+    --[no-]long           show status in long format (default)
+    -z, --[no-]null       terminate entries with NUL
+    --[no-]amend          amend previous commit
+    --no-post-rewrite     bypass post-rewrite hook
+    --post-rewrite        opposite of --no-post-rewrite
+    -u, --[no-]untracked-files[=<mode>]
+                          show untracked files, optional modes: all, normal, no. (Default: all)
+    --[no-]pathspec-from-file <file>
+                          read pathspec from file
+    --[no-]pathspec-file-nul
+                          with --pathspec-from-file, pathspec elements are separated with NUL character
+
+
+MICHAEL@DESKTOP-J1J4JC5 MINGW64 ~/Desktop/Mable_Tech portfoliio/css (main)
+$ git commit -a -m "add file"
+[main deb35bc] add file
+ 1 file changed, 48 insertions(+), 2 deletions(-)
+
+MICHAEL@DESKTOP-J1J4JC5 MINGW64 ~/Desktop/Mable_Tech portfoliio/css (main)
+$ git push
+Enumerating objects: 11, done.
+Counting objects: 100% (11/11), done.
+Delta compression using up to 4 threads
+Compressing objects: 100% (9/9), done.
+Writing objects: 100% (9/9), 2.02 KiB | 86.00 KiB/s, done.
+Total 9 (delta 2), reused 0 (delta 0), pack-reused 0 (from 0)
+remote: Resolving deltas: 100% (2/2), done.
+To https://github.com/wizzyonu/git-commands.git
+   df53792..deb35bc  main -> main
+
+MICHAEL@DESKTOP-J1J4JC5 MINGW64 ~/Desktop/Mable_Tech portfoliio/css (main)
+$ git fetch
+
+MICHAEL@DESKTOP-J1J4JC5 MINGW64 ~/Desktop/Mable_Tech portfoliio/css (main)
+$ git pull
+Updating deb35bc..84fddaa
+Fast-forward
+ README.md | 4 ++--
+ 1 file changed, 2 insertions(+), 2 deletions(-)
+
+MICHAEL@DESKTOP-J1J4JC5 MINGW64 ~/Desktop/Mable_Tech portfoliio/css (main)
+$ git branch
+* main
+
+MICHAEL@DESKTOP-J1J4JC5 MINGW64 ~/Desktop/Mable_Tech portfoliio/css (main)
+$ git branch dev1
+
+MICHAEL@DESKTOP-J1J4JC5 MINGW64 ~/Desktop/Mable_Tech portfoliio/css (main)
+$ git checkout dev1
+Switched to branch 'dev1'
+
+MICHAEL@DESKTOP-J1J4JC5 MINGW64 ~/Desktop/Mable_Tech portfoliio/css (dev1)
+$ git add form.html
+
+MICHAEL@DESKTOP-J1J4JC5 MINGW64 ~/Desktop/Mable_Tech portfoliio/css (dev1)
+$ git status
+On branch dev1
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+        new file:   form.html
+
+
+MICHAEL@DESKTOP-J1J4JC5 MINGW64 ~/Desktop/Mable_Tech portfoliio/css (dev1)
+$ git commit -m "added a new file"
+[dev1 e467e74] added a new file
+ 1 file changed, 11 insertions(+)
+ create mode 100644 form.html
+
+MICHAEL@DESKTOP-J1J4JC5 MINGW64 ~/Desktop/Mable_Tech portfoliio/css (dev1)
+$ git checkout main
+Switched to branch 'main'
+Your branch is up to date with 'origin/main'.
+
+MICHAEL@DESKTOP-J1J4JC5 MINGW64 ~/Desktop/Mable_Tech portfoliio/css (main)
+$ git checkout dev1
+Switched to branch 'dev1'
+
+MICHAEL@DESKTOP-J1J4JC5 MINGW64 ~/Desktop/Mable_Tech portfoliio/css (dev1)
+$ git checkout main
+Switched to branch 'main'
+Your branch is up to date with 'origin/main'.
+
+MICHAEL@DESKTOP-J1J4JC5 MINGW64 ~/Desktop/Mable_Tech portfoliio/css (main)
+$ git branch
+  dev1
+* main
+
+MICHAEL@DESKTOP-J1J4JC5 MINGW64 ~/Desktop/Mable_Tech portfoliio/css (main)
+$ git checkout -b dev2
+Switched to a new branch 'dev2'
+
+MICHAEL@DESKTOP-J1J4JC5 MINGW64 ~/Desktop/Mable_Tech portfoliio/css (dev2)
+$ git branch
+  dev1
+* dev2
+  main
+
+MICHAEL@DESKTOP-J1J4JC5 MINGW64 ~/Desktop/Mable_Tech portfoliio/css (dev2)
+$ git add form.html
+
+MICHAEL@DESKTOP-J1J4JC5 MINGW64 ~/Desktop/Mable_Tech portfoliio/css (dev2)
+$ git commit -m "added to"
+[dev2 52a8320] added to
+ 1 file changed, 11 insertions(+)
+ create mode 100644 form.html
+
+MICHAEL@DESKTOP-J1J4JC5 MINGW64 ~/Desktop/Mable_Tech portfoliio/css (dev2)
+$ git checkout main
+Switched to branch 'main'
+Your branch is up to date with 'origin/main'.
+
+MICHAEL@DESKTOP-J1J4JC5 MINGW64 ~/Desktop/Mable_Tech portfoliio/css (main)
+$ git merge dev1
+Updating 84fddaa..e467e74
+Fast-forward
+ form.html | 11 +++++++++++
+ 1 file changed, 11 insertions(+)
+ create mode 100644 form.html
+
+MICHAEL@DESKTOP-J1J4JC5 MINGW64 ~/Desktop/Mable_Tech portfoliio/css (main)
+$ git merge dev2
+Auto-merging form.html
+CONFLICT (add/add): Merge conflict in form.html
+Automatic merge failed; fix conflicts and then commit the result.
+
+MICHAEL@DESKTOP-J1J4JC5 MINGW64 ~/Desktop/Mable_Tech portfoliio/css (main|MERGING)
+$ git commit -a -m "merged"
+[main 8c85c0b] merged
+
+MICHAEL@DESKTOP-J1J4JC5 MINGW64 ~/Desktop/Mable_Tech portfoliio/css (main)
+$ git checkout dev1
+Switched to branch 'dev1'
+
+MICHAEL@DESKTOP-J1J4JC5 MINGW64 ~/Desktop/Mable_Tech portfoliio/css (dev1)
+$ git push origin dev1
+Enumerating objects: 4, done.
+Counting objects: 100% (4/4), done.
+Delta compression using up to 4 threads
+Compressing objects: 100% (3/3), done.
+Writing objects: 100% (3/3), 481 bytes | 160.00 KiB/s, done.
+Total 3 (delta 0), reused 0 (delta 0), pack-reused 0 (from 0)
+remote: 
+remote: Create a pull request for 'dev1' on GitHub by visiting:
+remote:      https://github.com/wizzyonu/git-commands/pull/new/dev1
+remote:
+To https://github.com/wizzyonu/git-commands.git
+ * [new branch]      dev1 -> dev1
+
+MICHAEL@DESKTOP-J1J4JC5 MINGW64 ~/Desktop/Mable_Tech portfoliio/css (dev1)
+$ git checkout dev2
+Switched to branch 'dev2'
+
+MICHAEL@DESKTOP-J1J4JC5 MINGW64 ~/Desktop/Mable_Tech portfoliio/css (dev2)
+$ git push origin dev2
+Enumerating objects: 4, done.
+Counting objects: 100% (4/4), done.
+Delta compression using up to 4 threads
+Compressing objects: 100% (3/3), done.
+Writing objects: 100% (3/3), 477 bytes | 159.00 KiB/s, done.
+Total 3 (delta 0), reused 0 (delta 0), pack-reused 0 (from 0)
+remote: 
+remote: Create a pull request for 'dev2' on GitHub by visiting:
+remote:      https://github.com/wizzyonu/git-commands/pull/new/dev2
+remote:
+To https://github.com/wizzyonu/git-commands.git
+ * [new branch]      dev2 -> dev2
+
+MICHAEL@DESKTOP-J1J4JC5 MINGW64 ~/Desktop/Mable_Tech portfoliio/css (dev2)
+$ git checkout main
+Switched to branch 'main'
+Your branch is ahead of 'origin/main' by 3 commits.
+  (use "git push" to publish your local commits)
+
+MICHAEL@DESKTOP-J1J4JC5 MINGW64 ~/Desktop/Mable_Tech portfoliio/css (main)
+$ git branch -d div2
+error: branch 'div2' not found
+
+MICHAEL@DESKTOP-J1J4JC5 MINGW64 ~/Desktop/Mable_Tech portfoliio/css (main)
+$ git branch -d dev1
+Deleted branch dev1 (was e467e74).
+
+MICHAEL@DESKTOP-J1J4JC5 MINGW64 ~/Desktop/Mable_Tech portfoliio/css (main)
+$ git branch
+  dev2
+* main
+
+MICHAEL@DESKTOP-J1J4JC5 MINGW64 ~/Desktop/Mable_Tech portfoliio/css (main)
+$ git checkout dev2
+Switched to branch 'dev2'
+
+MICHAEL@DESKTOP-J1J4JC5 MINGW64 ~/Desktop/Mable_Tech portfoliio/css (dev2)
+$ git add -a -m "added table of content"
+error: unknown switch `a'
+usage: git add [<options>] [--] <pathspec>...
+
+    -n, --[no-]dry-run    dry run
+    -v, --[no-]verbose    be verbose
+
+    -i, --[no-]interactive
+                          interactive picking
+    -p, --[no-]patch      select hunks interactively
+    -e, --[no-]edit       edit current diff and apply
+    -f, --[no-]force      allow adding otherwise ignored files
+    -u, --[no-]update     update tracked files
+    --[no-]renormalize    renormalize EOL of tracked files (implies -u)
+    -N, --[no-]intent-to-add
+                          record only the fact that the path will be added later
+    -A, --[no-]all        add changes from all tracked and untracked files
+    --[no-]ignore-removal ignore paths removed in the working tree (same as --no-all)
+    --[no-]refresh        don't add, only refresh the index
+    --[no-]ignore-errors  just skip files which cannot be added because of errors
+    --[no-]ignore-missing check if - even missing - files are ignored in dry run
+    --[no-]sparse         allow updating entries outside of the sparse-checkout cone
+    --[no-]chmod (+|-)x   override the executable bit of the listed files
+    --[no-]pathspec-from-file <file>
+                          read pathspec from file
+    --[no-]pathspec-file-nul
+                          with --pathspec-from-file, pathspec elements are separated with NUL character
+
+
+MICHAEL@DESKTOP-J1J4JC5 MINGW64 ~/Desktop/Mable_Tech portfoliio/css (dev2)
+$ git status
+On branch dev2
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+        modified:   README.md
+
+no changes added to commit (use "git add" and/or "git commit -a")
+
+MICHAEL@DESKTOP-J1J4JC5 MINGW64 ~/Desktop/Mable_Tech portfoliio/css (dev2)
+$ git commit -a -m "added a table of content"
+[dev2 1107bf5] added a table of content
+ 1 file changed, 8 insertions(+)
+
+MICHAEL@DESKTOP-J1J4JC5 MINGW64 ~/Desktop/Mable_Tech portfoliio/css (dev2)
+$ git push origin dev2
+Enumerating objects: 5, done.
+Counting objects: 100% (5/5), done.
+Delta compression using up to 4 threads
+Compressing objects: 100% (3/3), done.
+Writing objects: 100% (3/3), 492 bytes | 492.00 KiB/s, done.
+Total 3 (delta 1), reused 0 (delta 0), pack-reused 0 (from 0)
+remote: Resolving deltas: 100% (1/1), completed with 1 local object.
+To https://github.com/wizzyonu/git-commands.git
+   52a8320..1107bf5  dev2 -> dev2
+
+MICHAEL@DESKTOP-J1J4JC5 MINGW64 ~/Desktop/Mable_Tech portfoliio/css (dev2)
+$ git checkout main
+Switched to branch 'main'
+Your branch and 'origin/main' have diverged,
+and have 2 and 2 different commits each, respectively.
+  (use "git pull" if you want to integrate the remote branch with yours)
+
+MICHAEL@DESKTOP-J1J4JC5 MINGW64 ~/Desktop/Mable_Tech portfoliio/css (main)
+$ git add tect.txt
+fatal: pathspec 'tect.txt' did not match any files
+
+MICHAEL@DESKTOP-J1J4JC5 MINGW64 ~/Desktop/Mable_Tech portfoliio/css (main)
+$ code tect.txt
+
+MICHAEL@DESKTOP-J1J4JC5 MINGW64 ~/Desktop/Mable_Tech portfoliio/css (main)
+$
