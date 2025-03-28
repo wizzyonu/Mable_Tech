@@ -1,0 +1,135 @@
+Body{
+    width: 100%;
+    height: 100%;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+
+}
+.hero-section{
+    background-color: #2A2A2A;
+    background-size: contain;
+    height: 100%;
+    position: relative; /* Add this */
+    z-index: 1; /* Add this */
+    
+}
+.hero-section,
+.stats-section,
+.experience-education-section{
+    display: flex;
+    gap: 30px;
+    padding: 20px;
+}
+.hero-content{
+    width: 70%;
+    
+}
+.hero-image-container{
+    width: 40%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+   padding: 50px;
+    
+
+}
+.profile-image{
+    width: 400px;
+    height: 400px;
+    object-fit: cover;
+    border-radius: 20px;
+    
+}
+.hero-section .hero-content{
+    line-height: 0.9;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    padding:50px;
+    padding-left: 30px;
+    color: #E0E0E0;
+
+}
+.hero-section .social-links{
+    display: flex;
+    gap: 35px;
+    margin-top: 30px;
+   
+    
+}
+ .social-icon .fab{
+   font-size: 1.5rem;
+   color: #CCCCCC;
+   transition: all 0.3s ease-in-out;
+ 
+}
+.fab:hover{
+    color: #00A2FF;
+    transform: translateY(-3px);
+    
+}
+
+.download-cv-button{
+    background: #00A2FF;
+    color: #fff;
+    padding: 20px;
+    border: none;
+    border-radius: 30px;
+    cursor: pointer;
+    font-size: 1rem;
+    margin-top: 30px;
+    transition: all 0.3s ease-in-out;
+    
+    
+}
+.download-cv-button:active{
+    background-color: #00FF9D;
+}
+ h1{
+    font-size: 2.3rem;
+    font-weight: bolder;
+    
+}
+.hero-subtitle{
+    font-size: 3rem;
+}
+.hero-description{
+    font-size: 1.1rem;
+    line-height: 1.5;
+}
+.stats-section{
+    width: 90%;
+    justify-content: space-between;
+    background-color: white;
+    position: relative; /* Change from static to relative */
+    z-index: 2; /* Ensure it's on top */
+    border-radius: 30px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+    height: 20%;
+    margin: -50px auto 0;
+
+
+}
+.stats-section .stat-item{
+    text-align: center;
+    
+}
+.stat-number{
+    font-size: 2rem;
+    font-weight: bolder;
+    color: #00A2FF;
+}
+.stat-label{
+    font-size: 1rem;
+    
+}
+.services-section{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.services-container .service-item{
+    display: flex;
+    
+}
