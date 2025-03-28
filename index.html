@@ -69,29 +69,35 @@
     <section class="experience-education-section">
         <div class="experience-container">
             <h2 class="section-title">My Experience</h2>
-            <div class="experience-item">
-                <h3 class="experience-date">2022-2024</h3>
-                <h3 class="experience-role">Web Developer</h3>
-                <h3 class="experience-company">Mable_Tech</h3>
+            <div class="coder">
+                <div class="experience-item">
+                    <h4 class="experience-date" style="color: #00A2FF; font-weight: bolder;">2022-2024</h4>
+                    <h3 class="experience-role">Web Developer</h3>
+                    <p class="experience-company">Mable_Tech</p>
+                </div>
+                <div class="experience-item">
+                    <h4 class="experience-date" style="color: #00A2FF; font-weight: bolder;">2024-Till Date</h4>
+                    <h3 class="experience-role">Data Analyst</h3>
+                    <p class="experience-company">NIIT Solutions</p>
+                </div>
             </div>
-            <div class="experience-item">
-                <h3 class="experience-date">2024-Till Date</h3>
-                <h3 class="experience-role">Data Analyst</h3>
-                <h3 class="experience-company">NIIT Solutions</h3>
-            </div>
+          
         </div>
         <div class="education-container">
             <h2 class="section-title">My Education</h2>
-            <div class="education-item">
-                <h3 class="education-date">2019-2023</h3>
-                <h3 class="education-degree">Computer Science</h3>
-                <h3 class="education-institution">Lead City University</h3>
+            <div class="coder">
+                <div class="education-item">
+                    <h4 class="education-date" style="color: #00A2FF; font-weight: bolder;">2019-2023</h4>
+                    <h3 class="education-degree"  >Computer Science</h3>
+                    <p class="education-institution">Lead City University</p>
+                </div>
+                <div class="education-item">
+                    <h4 class="education-date" style="color: #00A2FF; font-weight: bolder;">2018-2019</h4>
+                    <h3 class="education-degree">Web Development</h3>
+                    <p class="education-institution">NIIt Solutions</p>
+                </div>
             </div>
-            <div class="education-item">
-                <h3 class="education-date">2018-2019</h3>
-                <h3 class="education-degree">Web Development</h3>
-                <h3 class="education-institution">NIIt Solutions</h3>
-            </div>
+          
                
         </div>
 
@@ -135,14 +141,16 @@
             <div class="project-item">
                 <img src="#" class="project-image project1"/>
                 <div class="project-description">
-                    <P class="project-details">E-commerce Website <br/> html,css,js</P>
+                    <h4 class="project-details">E-commerce Website </h4>
+                     <p class="class">html,css,js</p>
                 </div>
 
             </div>
             <div class="project-item">
                 <img src="#" class="project-image project2"/>
                 <div class="project-description">
-                    <P class="project-details">Mortgage Calculator <br/> html,css,js</P>
+                    <h4 class="project-details">Mortgage Calculator </h4>
+                    <p class="class">html,css,js</p> 
                 </div>
 
 
@@ -150,7 +158,8 @@
             <div class="project-item">
                 <img src="#" class="project-image project3"/>
                 <div class="project-description">
-                    <P class="project-details">Calculator <br/> html,css,js</P>
+                    <h4 class="project-details">Calculator </h4>
+                    <p class="class">html,css,js</p> 
                 </div>   
 
                 
@@ -158,7 +167,8 @@
             <div class="project-item">
                 <img src="#" class="project-image project4"/>
                 <div class="project-description">
-                    <p class="project-details">form <br/> html,css,js</p>
+                    <h4 class="project-details">form </h4>
+                    <p class="class">html,css,js</p> 
                 </div>
 
             </div>
@@ -166,17 +176,25 @@
 
     </section>
 
-    <section class="contact-section">
-        <h2 class="section-title">Lets Work Together!</h2>
-        <form class="contact-form">
-            <input type="text" placeholder="Your Name" class="name-input input-field"/>
-            <input type="email" placeholder="Your Email " class="email-input input-field"/>
-            
-            <textarea placeholder="Your Message" class="message-input input-field"></textarea>
-            <button type="submit" class="submit-button">Send Message</button>
-        </form>
-    </section>
+    <section class="contact" id="contact">
+    <h2>Let's work together!</h2>
+    <form id="contact-form">
+        <div class="form-group">
+            <input type="text" id="name" name="name" placeholder="Your Name" required>
+        </div>
+        <div class="form-group">
+            <input type="email" id="email" name="email" placeholder="Your Email" required>
+        </div>
+        <div class="form-group">
+            <textarea id="message" name="message" placeholder="Your Message" required></textarea>
+        </div>
+        <button type="submit" class="submit-btn">Send Message <i class="fas fa-paper-plane"></i></button>
+    </form>
+</section>
 
+<footer>
+    <p>&copy; 2025 Mable_Tech. All rights reserved.</p>
+</footer>
 
     
     

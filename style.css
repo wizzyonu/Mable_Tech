@@ -116,7 +116,7 @@ Body{
     
 }
 .stat-number{
-    font-size: 2rem;
+    font-size: 2.5rem;
     font-weight: bolder;
     color: #00A2FF;
 }
@@ -128,8 +128,166 @@ Body{
     display: flex;
     flex-direction: column;
     align-items: center;
+    padding: 60px;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
+.services-section .section-title{
+    font-size: 2.5rem;
+}
+
 .services-container .service-item{
     display: flex;
+    flex-direction: column;
+    width: 100%;
+    border: 1px black solid;
+    padding: 10px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.05);
+    background-color: #CCCCCC;
+    border-radius: 10px;
+    transition: all 0.3s ease-in-out;
+    border-style: none;
     
 }
+.service-item:hover{
+    transform: scale(1.05);
+}  
+
+
+.services-container{
+    display: flex;
+    width: 50%;
+    justify-content: center;
+    gap: 40px;
+   
+}
+.service-item .service-number{
+    color: #00A2FF;
+    font-size: 2rem;
+}
+.experience-education-section{
+    display: flex;
+    gap: 30%;
+    padding: 50px;
+   
+}
+.coder{
+    display: flex;
+    flex-direction:column ;
+    gap: 50px;
+    
+
+}
+.experience-item{
+    border-left: #00A2FF 5px solid;
+    padding-left: 20px;
+   
+}
+.education-item{
+    border-left: #00A2FF 5px solid;
+    padding-left: 20px;
+}
+.experience-container{
+  line-height: normal;
+}
+.skills-section{
+    padding: 6rem 2rem;
+    width: 100%;
+    margin: 0 auto;
+}
+
+.skills-container{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 2rem;
+    margin-top: 3rem;
+}
+.skill-item {
+    text-align: center;
+}
+.skill-item img {
+    width: 50px;
+    height: 50px;
+    margin-bottom: 1rem;
+}
+.projects-section{
+   padding: 20px;
+   
+    margin: 0 auto;
+    box-sizing: border-box;
+    width: 100%;
+}
+.projects-container{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2rem;
+    margin-top: 3rem;
+}
+.project-item {
+    background: white;
+    border-radius: 20px;
+    overflow: hidden;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.05);
+    transition: all 0.3s ease-in-out;
+}
+.project-item:hover{
+    transform: scale(1.05);
+}
+.project-item img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+}
+.project-details{
+    padding: 1rem;
+    margin: 0;
+}
+.project-item .class{
+    padding: 0 1rem 1rem;
+}
+.contact {
+    padding: 6rem 2rem;
+    max-width: 800px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.form-group {
+    margin-bottom: 1.5rem;
+}
+
+input, textarea {
+    width: 100%;
+    padding: 1rem;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    font-size: 1rem;
+}
+
+textarea {
+    height: 150px;
+    resize: vertical;
+}
+
+.submit-btn {
+    background: #00A2FF;
+    color: white;
+    border: none;
+    padding: 1rem 2rem;
+    border-radius: 50px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: transform 0.3s;
+}
+
+.submit-btn:hover {
+    transform: translateY(-2px);
+}
+
+footer {
+    text-align: center;
+    padding: 2rem;
+    background: #f1f1f1;
+}
+
