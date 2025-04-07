@@ -347,11 +347,12 @@ footer {
     .hero-image-container{
         width: 100%;
         padding: 0;
+        padding-top: 20px;
        
     }
     .download-cv-button{
         position: absolute;
-        top: 45%;
+        top: 49%;
        
     }
    
