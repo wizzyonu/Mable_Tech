@@ -1,20 +1,24 @@
-Body{
+/* Prevent horizontal overflow */
+html, body {
     width: 100%;
-    height: 100%;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    overflow-x: hidden;
+  }
+  
+  /* Ensure all elements respect boundaries */
+  * {
+    box-sizing: border-box;
     margin: 0;
     padding: 0;
-    box-sizing: border-box;
-    overflow-x: hidden;
-
-
-}
+    max-width: 100%;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; /* Critical for images/tables */
+  }
 .hero-section{
     background-color: #2A2A2A;
     background-size: contain;
     height: 100%;
     position: relative; /* Add this */
     z-index: 1; /* Add this */
+    
     
 }
 .hero-section,
@@ -36,6 +40,12 @@ Body{
    padding: 50px;
     
 
+}
+.hero-subtitle{
+    margin-top: 20px;
+}
+.hero-description{
+    margin-top: 20px;
 }
 .profile-image{
     width: 400px;
@@ -134,8 +144,7 @@ Body{
     flex-direction: column;
     align-items: center;
     padding: 60px;
-    margin: 0;
-    padding: 0;
+   
     box-sizing: border-box;
 }
 .services-section .section-title{
@@ -165,6 +174,7 @@ Body{
     width: 50%;
     justify-content: center;
     gap: 40px;
+    padding-top: 10px;
    
 }
 .service-item .service-number{
@@ -194,7 +204,10 @@ Body{
     padding-left: 20px;
 }
 .experience-container{
-  line-height: normal;
+  line-height: 2;
+}
+.education-container{
+    line-height: 2;
 }
 .skills-section{
     padding: 6rem 2rem;
@@ -316,7 +329,9 @@ footer {
   @media (max-width: 480px) {
     body {
         overflow-x: hidden;
-       
+        margin: 0;
+        padding: 0 ;
+        box-sizing: border-box;
         
     }
    
@@ -336,17 +351,26 @@ footer {
     }
     .download-cv-button{
         position: absolute;
-        top: 50%;
+        top: 49%;
+       
+    }
+   
+    .stat-label{
+        font-size: 1rem;
     }
     .stats-section{
         flex-direction: column;
-        width: 100%;
+        width: 90%;
         height: auto;
-        margin: 0 auto;
         padding: 20px;
+        margin: 0 auto;
+        box-sizing: border-box;
     }
-    .stat-label{
-        font-size: 1rem;
+    .services-section{
+        width: 100%;
+        padding: 20px;
+        margin: 0 auto;
+        box-sizing: border-box;
     }
     .services-container{
         flex-direction: column;
@@ -375,5 +399,8 @@ footer {
     #contact-form{
         width: 90%;
        
+    }
+    .skills-section{
+        padding: 2rem 1rem;
     }
 }
