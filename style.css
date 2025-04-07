@@ -80,6 +80,10 @@ Body{
     font-size: 1rem;
     margin-top: 30px;
     transition: all 0.3s ease-in-out;
+    font-weight: bolder;
+    text-decoration: none;
+    position: relative;
+    top: 10%;
     
     
 }
@@ -207,7 +211,7 @@ Body{
     text-align: center;
 }
 .skill-item img {
-    width: 50px;
+    width: 60px;
     height: 50px;
     margin-bottom: 1rem;
 }
@@ -290,4 +294,85 @@ footer {
     padding: 2rem;
     background: #f1f1f1;
 }
+/* Define the zoom animation */
+@keyframes zoomIn {
+    from {
+      transform: scale(0.5); 
+      opacity: 0; 
+    }
+    to {
+      transform: scale(1);
+      opacity: 1;
+    }
+  }
+  
+  
+  .profile-image{
+    animation: zoomIn 1s ease-out forwards; 
+    max-width: 100%; 
+  }
 
+  @media (max-width: 480px) {
+    body {
+        overflow-x: hidden;
+       
+        
+    }
+   
+    .hero-section{
+        flex-direction: column;
+        align-items: center;
+        padding: 30px;
+    }
+    .hero-content{
+        width: 100%;
+      
+    }
+    .hero-image-container{
+        width: 100%;
+        padding: 0;
+       
+    }
+    .download-cv-button{
+        position: absolute;
+        top: 50%;
+    }
+    .stats-section{
+        flex-direction: column;
+        width: 100%;
+        height: auto;
+        margin: 0 auto;
+        padding: 20px;
+    }
+    .stat-label{
+        font-size: 1rem;
+    }
+    .services-container{
+        flex-direction: column;
+        width: 70%;
+    }
+    .section-title{
+        font-size: 1.5rem;
+    }
+    .service-title{
+        font-size: 1rem;
+    }
+    .experience-education-section{
+        flex-direction: column;
+        width: 100%;
+        padding: 20px;
+    }
+    .skills-container{
+        grid-template-columns: repeat(2, 1fr);
+    }
+    .projects-container{
+        grid-template-columns: 1fr;
+    }
+    .project-item img {
+        height: 150px;
+    }
+    #contact-form{
+        width: 90%;
+       
+    }
+}
