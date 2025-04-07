@@ -1,6 +1,6 @@
 document.addEventListener('DOMContentLoaded', function() {
     const statNumbers = document.querySelectorAll('.stat-number');
-    const animationDuration = 2000; // 1 seconds
+    const animationDuration = 1000; // 1 seconds
     const frameDuration = 1000 / 90; // 60 frames per second
     const totalFrames = Math.round(animationDuration / frameDuration);
     
