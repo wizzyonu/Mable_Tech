@@ -251,6 +251,7 @@ html, body {
 }
 .project-item:hover{
     transform: scale(1.05);
+    opacity: 0.8;
 }
 .project-item img {
     width: 100%;
@@ -260,6 +261,7 @@ html, body {
 .project-details{
     padding: 1rem;
     margin: 0;
+    font-size: 1.5rem;
 }
 .project-item .class{
     padding: 0 1rem 1rem;
@@ -342,6 +344,7 @@ footer {
     }
     .hero-content{
         width: 100%;
+        text-align: left;
       
     }
     .hero-image-container{
@@ -352,8 +355,11 @@ footer {
     }
     .download-cv-button{
         position: absolute;
-        top: 52%;
-        margin-bottom: 10px;
+        top: 51%;
+       border-radius: 20px;
+      
+        margin-top: 20px;
+        width: 40%;
        
     }
    
