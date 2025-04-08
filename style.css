@@ -160,7 +160,7 @@ html, body {
     box-shadow: 0 5px 15px rgba(0,0,0,0.05);
     background-color: #CCCCCC;
     border-radius: 10px;
-    transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out 0.1s;
     border-style: none;
     
 }
@@ -247,7 +247,8 @@ html, body {
     border-radius: 20px;
     overflow: hidden;
     box-shadow: 0 5px 15px rgba(0,0,0,0.05);
-    transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out 0.1s;
+    cursor: pointer;
 }
 .project-item:hover{
     transform: scale(1.05);
